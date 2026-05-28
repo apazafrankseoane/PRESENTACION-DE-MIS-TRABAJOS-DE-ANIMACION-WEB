@@ -1,0 +1,100 @@
+<html>
+<head>
+    <title>ANIMACIONES CSS - ANIMATION</title>
+    <style>
+    
+    h1{
+        font-family:"century gothic";
+        color:rgba(165, 42, 42, 0);
+        text-align: center;
+
+        animation-name: titulo;  /*titulo para la animacion*/
+        animation-duration: 3s;  /*duracion de la animacion*/
+        animation-iteration-count: 1;   /*cant. de veces que se realiza la animacion*/
+        animation-fill-mode: forwards;  /* Indica cual es el ultimo estado que se queda   backwards es su contrario*/   
+
+    }
+    @keyframes titulo {
+        from{
+            color: rgba(165, 42, 42, 0);
+        }
+        to{
+            color: rgba(165, 18, 12, 1);
+        }
+    }
+
+    p{
+        text-align: center;
+        font-family: " century gothic";
+        font-weight:bold;
+        animation-name:texto;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: backwards;
+        animation-delay: 3s;
+    }
+    @keyframes texto{
+        from{
+            color:rgba(0, 0, 0, 0);
+        }
+        to{
+            color:rgba(0, 0, 0, 1);
+        }
+    }
+
+    img{
+        height: 200px;
+        width: 200px;
+        display: block; /* modo de mostrar el objeto */
+        margin: auto; /* centrar  la imagen */
+        opacity: 0;
+
+        animation: imagen 3s 6s 1 forwards;
+    }
+
+    @keyframes imagen{
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+    }
+
+
+    a{
+    display:block;
+    width:250px;
+    background-color:#2563eb;
+    color:white;
+    text-decoration:none;
+    text-align:center;
+    padding:15px;
+    margin:auto;
+    font-size:20px;
+    font-family:Arial;
+    font-weight:bold;
+    border-radius:10px;
+    box-shadow:0px 0px 10px black;
+    transition:1s;
+    }
+
+    a:hover{
+    background-color:black;
+    transform:scale(1.1);
+    }
+
+
+    </style>
+</head>
+<body>
+    <h1>PROMOCION 2026 - CI</h1>
+    <p>IESTP MANUEL SEOANE CORRALES</p>
+    <img src="img/logo.png">
+
+
+<br><br>
+<a href="../index.html"> VOLVER AL INICIO</a>
+
+</body>
+</html>

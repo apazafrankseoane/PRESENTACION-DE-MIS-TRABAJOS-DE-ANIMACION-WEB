@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>CLIPPATH SEMANA 6</title>
+    <style> 
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .contenedor{
+            width: 800px;
+            height: 900px;
+            border: 1px solid black;
+            position:relative;
+            margin:0 auto;
+            overflow: hidden;
+
+            background-image: url(img/fondo.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+
+
+        .marco1{
+            width: 150px;
+            height: 150px;
+            background-image: url(img/gorra.jpg);
+            background-size: cover;
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+
+            position: absolute;
+            top: 30px;
+            left: 280px;
+            z-index: 8;
+
+            animation: giro 3s infinite linear ;
+        }
+
+        @keyframes giro {
+            0%{
+                transform: rotate(0deg);
+              }
+
+            25%{
+                transform: rotate(10deg);
+               }
+
+            50%{
+                transform: rotate(0deg);
+               }
+
+            75%{
+                transform: rotate(-10deg);
+               }
+
+            100%{
+                transform: rotate(0deg);
+                } 
+        }
+
+        .marco2{
+            width: 150px;
+            height: 150px;
+            background-image: url(img/cara.jpg);
+            background-size: 70% 100%;
+            background-repeat: no-repeat;
+            background-color: rgb(248, 221, 210);
+            clip-path: circle(50% at 50% 50%);
+
+            position: absolute; 
+            top: 150px;
+            left: 280px;
+            z-index: 7;
+        }
+    
+        .marco3{
+            width: 200px;
+            height: 200px;
+            background-image: url(img/ROPA.jpg);
+            background-size: cover; 
+            clip-path: polygon(37% 0, 63% 0, 83% 100%, 21% 100%);
+
+            position: absolute; 
+            top: 295px;
+            left: 260px;
+            z-index: 6;
+        }
+        .marco4{
+            width: 200px;
+            height: 200px;
+            background-color: rgb(248, 221, 210);
+            background-size: cover; 
+            clip-path: polygon(100% 38%, 100% 55%, 0 55%, 0 37%);
+
+            position: absolute; 
+            top: 295px;
+            left: 260px;
+            z-index: 5;
+        }
+
+        .marco5{
+            width: 200px;
+            height: 200px;
+            background-color: brown;
+            background-size: cover; 
+            clip-path: ellipse(12% 7% at 43% 54%);
+
+            position: absolute; 
+            top: 400px;
+            left: 250px;
+            z-index: 4;
+        }
+
+        .marco6{
+            width: 200px;
+            height: 200px;
+            background-color: brown;
+            background-size: cover; 
+            clip-path: ellipse(12% 7% at 43% 54%);
+
+            position: absolute; 
+            top: 400px;
+            left: 305px;
+            z-index: 4;
+        }
+
+        .marco7{
+            width: 150px;
+            height: 150px;
+            background-image: url(img/CONO.jpg);
+            background-size: cover; 
+            clip-path: polygon(44% 71%, 25% 22%, 62% 21%);
+
+            position: absolute; 
+            top: 300px;
+            left: 395px;
+            z-index: 3;
+        }
+
+        .marco8{
+            width: 45px;
+            height: 45px;
+            background-image: url(img/sabor1.jpg);
+            background-size: cover; 
+            clip-path: circle(50% at 50% 50%);
+
+            position: absolute; 
+            top: 290px;
+            left: 424px;
+            z-index: 3;
+
+            animation: giro1 3s infinite linear ;
+        }
+        @keyframes giro1 {
+            0%{
+                transform: rotate(0deg);
+              }
+
+            50%{
+                transform: rotate(360deg);
+               }
+
+            100%{
+                transform: rotate(0deg);
+               }
+            
+        }
+
+
+        .marco9{
+            width: 45px;
+            height: 45px;
+            background-image: url(img/sabor2.jpg);
+            background-size: cover; 
+            clip-path: circle(50% at 50% 50%);
+
+            position: absolute; 
+            top: 290px;
+            left: 450px;
+            z-index: 3;
+
+            animation: giro2 3s infinite linear ;
+        }
+        @keyframes giro2 {
+            0%{
+                transform: rotate(0deg);
+              }
+
+            50%{
+                transform: rotate(360deg);
+               }
+
+            100%{
+                transform: rotate(0deg);
+               }
+            
+        }
+
+        .marco10{
+            width: 45px;
+            height: 45px;
+            background-image: url(img/sabor3.png);
+            background-size: cover; 
+            clip-path: circle(50% at 50% 50%);
+
+            position: absolute; 
+            top: 265px;
+            left: 438px;
+            z-index: 3;
+            animation: giro3 3s infinite linear ;
+        }
+        @keyframes giro3 {
+            0%{
+                transform: rotate(0deg);
+              }
+
+            50%{
+                transform: rotate(360deg);
+               }
+
+            100%{
+                transform: rotate(0deg);
+               }
+            }
+
+
+
+        .personita{
+            position: absolute;
+            left: 230px;
+            top: 350px;
+        }
+    
+
+    a{
+    display:block;
+    width:250px;
+    background-color:#2563eb;
+    color:white;
+    text-decoration:none;
+    text-align:center;
+    padding:15px;
+    margin:auto;
+    font-size:20px;
+    font-family:Arial;
+    font-weight:bold;
+    border-radius:10px;
+    box-shadow:0px 0px 10px black;
+    transition:1s;
+    }
+
+    a:hover{
+    background-color:black;
+    transform:scale(1.1);
+    }
+
+
+
+    </style>        
+</head>
+<body>
+    <div class="contenedor">
+
+        <div class="personita">
+
+            <div class="marco1"></div>
+            <div class="marco2"></div>
+            <div class="marco3"></div>
+            <div class="marco4"></div>
+            <div class="marco5"></div>
+            <div class="marco6"></div>
+            <div class="marco7"></div>
+            <div class="marco8"></div>
+            <div class="marco9"></div>
+            <div class="marco10"></div>
+        </div>
+
+    </div>
+
+<br><br>
+
+<a href="../index.html"> VOLVER AL INICIO</a>
+
+</body>
+</html>
