@@ -1,0 +1,103 @@
+body {
+        background: linear-gradient(180deg, #e3f2fd 0%, #ffffff 100%);
+        background-attachment: fixed;
+        margin: 0;
+        padding: 20px;
+        font-family: "Century Gothic", Arial, sans-serif;
+    }
+
+
+    p {
+        max-width: 850px;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 1.8;
+        padding: 15px;
+        font-weight: bold; 
+        color: rgba(0, 0, 0, 0);
+        text-align: center;
+    }
+
+   
+    .img1, .img2, .img3 {
+        height: 220px;
+        width: 220px; 
+        display: block; 
+        margin: 40px auto; 
+        opacity: 0;
+        border-radius: 25px;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1); 
+        object-fit: cover; 
+    }
+
+  
+    h1{
+        color:rgba(0, 0, 0, 0);
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 40px;
+        font-size: 40px;
+        animation: titulo 3s forwards;
+    }
+    @keyframes titulo { to { color: rgb(17, 117, 211); } }
+
+
+    .img1{ animation: aparecer 3s 3s forwards; }
+
+
+    .tema1{
+        text-align: center; 
+        color: rgba(0, 0, 0, 0);
+        margin-top: 60px;
+        font-size: 28px;
+        animation: color_subtemas 3s 6s forwards;
+    }
+
+
+    .parrafo1{ animation: aparecer_texto 3s 9s forwards; }
+
+  
+    .img2{ animation: aparecer 3s 12s forwards; }
+
+
+    .tema2{
+        text-align: center; 
+        color: rgba(0, 0, 0, 0);
+        margin-top: 60px;
+        font-size: 28px;
+        animation: color_subtemas 3s 15s forwards;
+    }
+
+
+    .parrafo2{ animation: aparecer_texto 3s 18s forwards; }
+
+
+    .img3{ animation: aparecer 3s 21s forwards; }
+
+
+    @keyframes aparecer { to { opacity: 1; } }
+    @keyframes aparecer_texto { to { color: rgb(40, 40, 40); } }
+    @keyframes color_subtemas { to { color: rgb(22, 69, 156); } }
+
+
+    a{
+    display:block;
+    width:250px;
+    background-color:#2563eb;
+    color:white;
+    text-decoration:none;
+    text-align:center;
+    padding:15px;
+    margin:auto;
+    font-size:20px;
+    font-family:Arial;
+    font-weight:bold;
+    border-radius:10px;
+    box-shadow:0px 0px 10px black;
+    transition:1s;
+    }
+
+    a:hover{
+    background-color:black;
+    transform:scale(1.1);
+    }

@@ -1,0 +1,66 @@
+*{
+            margin:0px;
+            padding:0px;
+        }
+
+        body{
+            background-image:url(../img/fondito2.jpg);
+            background-size:cover;
+            background-position:center;
+            font-family:Arial;
+            background-color:#0f172a;
+        }
+
+        h1{
+            text-align:center;
+            color:white;
+            background-color:#1e293b;
+            padding:20px;
+            box-shadow:0px 0px 10px black;
+
+            position:relative;
+            animation:mover 3s infinite alternate;
+        }
+
+        @keyframes mover{
+            0%{
+                left:0px;
+            }
+
+            100%{
+                left:15px;
+            }
+        }
+
+        ul{
+            width:900px;
+            margin:30px auto;
+            list-style:none;
+        }
+
+        li{
+            background-color:rgba(255,255,255,0.1);
+            margin:10px;
+            padding:15px;
+            border-left:8px solid cyan;
+            box-shadow:0px 0px 10px black;
+            transition:1s;
+        }
+
+        li:hover{
+            background-color:#2563eb;
+            transform:translateX(10px);
+        }
+
+        a{
+            color:white;
+            text-decoration:none;
+            font-size:18px;
+            font-weight:bold;
+        }
+
+        ul ul li{
+            background-color:rgba(0,0,0,0.4);
+            border-left:8px solid yellow;
+            margin-top:10px;
+        }

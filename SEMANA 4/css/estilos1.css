@@ -1,0 +1,163 @@
+*{
+                margin:0px;
+                padding:0px;
+                background-color: black;
+            }
+            .contenedor{
+                width: 800px;
+                height: 300px;
+                position: relative;
+                margin: 0 auto;
+                border: 1px solid black;
+                overflow: hidden;
+            }
+            .marco1{
+                width: 200px;
+                height: 300px;
+                background-color: red;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+
+                animation: marco1 2s 1 forwards;
+                background-image: url(../img/mar.jpg) ;       /*UNA FORMA SENCILLA DE IMPORTAR LA IMAGEN */
+                background-size: cover;         /*UNA FORMA SENCILLA DE AJUSTAR LA IMAGEN EN EL CUADRO */
+            }
+            @keyframes marco1 {
+                0%{
+                    top:-300px;
+                    left:0px;
+                    transform: rotateZ(180deg)    /*UNA funsion el cual hace rotar la imagen en distintos ejes como el x,y and z y se designa cuantos grados */
+                }   
+                50%{
+                    top:300px;
+                    left:0px;
+                }
+                100%{
+                    top:0px;
+                    left:0px;
+                }
+
+
+                
+            }
+            .marco2{
+                width: 200px;
+                height: 300px;
+                background-color: green;
+                position: absolute;
+                top: -300px;
+                left: 200px;
+
+                animation: marco2 2s 1 forwards 2s;
+                background-image: url(../img/costa.jpg) ;     
+                background-size: cover;         
+
+            }
+            @keyframes marco2 {
+                0%{
+                    top:-300px;
+                    left:200px;
+                    transform: rotateZ(180deg)    /*UNA funsion el cual hace rotar la imagen en distintos ejes como el x,y and z y se designa cuantos grados */
+                }   
+                50%{
+                    top:300px;
+                    left:200px;
+                }
+                100%{   
+                    top:0px;
+                    left:200px;
+                }
+            }
+
+
+            .marco3{
+                width: 200px;
+                height: 300px;
+                background-color: yellowgreen;
+                position: absolute;
+                top: -300px;   
+                left: 400px;
+
+                animation:marco3 2s 1 forwards 4s;
+
+                background-image:url(../img/selva.jpg);
+                background-size:cover;
+            }
+
+            @keyframes marco3{
+
+                0%{
+                    top:-300px;
+                    left:400px;
+                    transform:rotateZ(180deg);
+                }
+
+                50%{
+                    top:300px;
+                    left:400px;
+                }
+
+                100%{
+                    top:0px;
+                    left:400px;
+                    transform:rotateZ(0deg);
+                }
+            }
+
+            .marco4{
+                width: 200px;
+                height: 300px;
+                background-color: blue;
+                position: absolute;
+                top: -300px;
+                left: 600px;
+
+                animation:marco4 2s 1 forwards 6s;
+
+                background-image:url(../img/sierra.jpg);
+                background-size:cover;
+            }
+
+                @keyframes marco4{
+
+                0%{
+                    top:-300px;
+                    left:600px;
+                    transform:rotateZ(180deg);
+                }
+
+                50%{
+                    top:300px;
+                    left:600px;
+                }
+
+                100%{
+                    top:0px;
+                    left:600px;
+                    transform:rotateZ(0deg);
+                }
+            }
+
+
+    a{
+    display:block;
+    width:250px;
+    background-color:#2563eb;
+    color:white;
+    text-decoration:none;
+    text-align:center;
+    padding:15px;
+    margin:auto;
+    font-size:20px;
+    font-family:Arial;
+    font-weight:bold;
+    border-radius:10px;
+    box-shadow:0px 0px 10px black;
+    transition:1s;
+    }
+
+    a:hover{
+    background-color:black;
+    transform:scale(1.1);
+    }
